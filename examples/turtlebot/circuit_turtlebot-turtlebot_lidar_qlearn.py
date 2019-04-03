@@ -9,6 +9,12 @@ import time
 import liveplot
 import qlearn
 
+reg = register(
+    id='GazeboCircuitTurtlebot-TurtlebotLidar-v0',
+    entry_point='gazebo_circuit_turtlebot-turtlebot_lidar-v0:GazeboCircuitTurtlebot-TurtlebotLidarEnv',
+    timestep_limit=1000,
+    )
+
 def render():
     render_skip = 0 #Skip first X episodes.
     render_interval = 50 #Show render Every Y episodes.
