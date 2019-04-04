@@ -17,7 +17,7 @@ class GazeboCircuitTurtlebotLidarEnv(gazebo_env.GazeboEnv):
 
     def __init__(self):
         # Launch the simulation with the given launchfile name
-        gazebo_env.GazeboEnv.__init__(self, "GazeboCircuitTurtlebot-TurtleBotLidar_v0.launch")
+        gazebo_env.GazeboEnv.__init__(self, "GazeboCircuitTurtlebotTurtleBotLidar_v0.launch")
         self.vel_pub = rospy.Publisher('/mobile_base/commands/velocity', Twist, queue_size=5)
         self.unpause = rospy.ServiceProxy('/gazebo/unpause_physics', Empty)
         self.pause = rospy.ServiceProxy('/gazebo/pause_physics', Empty)

@@ -10,7 +10,7 @@ import liveplot
 import qlearn
 
 reg = register(
-    id='GazeboCircuitTurtlebot-TurtlebotLidar-v0',
+    id='GazeboCircuitTurtlebotTurtlebotLidar-v0',
     entry_point='gazebo_circuit_turtlebot-turtlebot_lidar-v0:GazeboCircuitTurtlebot-TurtlebotLidarEnv',
     timestep_limit=1000,
     )
