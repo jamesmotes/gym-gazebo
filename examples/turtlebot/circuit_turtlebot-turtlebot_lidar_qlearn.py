@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import gym
 from gym import wrappers
+from gym.envs.registration import register
 import gym_gazebo
 import time
 import numpy
@@ -9,7 +10,7 @@ import time
 import liveplot
 import qlearn
 
-reg = register(
+register(
     id='GazeboCircuitTurtlebotTurtlebotLidar-v0',
     entry_point='gazebo_circuit_turtlebot-turtlebot_lidar-v0:GazeboCircuitTurtlebot-TurtlebotLidarEnv',
     timestep_limit=1000,
